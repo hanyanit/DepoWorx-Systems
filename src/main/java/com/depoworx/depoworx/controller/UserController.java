@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.depoworx.depoworx.DTO.LoginRequest;
@@ -12,7 +13,8 @@ import com.depoworx.depoworx.Domain.User;
 import com.depoworx.depoworx.service.UserService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("/api/users")
+@CrossOrigin(origins = "http://localhost:57071")
 public class UserController {
 
     private final UserService userService;
