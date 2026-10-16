@@ -38,6 +38,9 @@ public class SecurityConfig {
                     "/api/users/login"
                 ).permitAll()
 
+                // Public home/health endpoint
+                .requestMatchers("/").permitAll()
+
                 // H2 console
                 .requestMatchers("/h2-console/**").permitAll()
 
