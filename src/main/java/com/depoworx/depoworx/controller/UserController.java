@@ -14,7 +14,7 @@ import com.depoworx.depoworx.service.UserService;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:57071")
+@CrossOrigin(origins = "https://depo-workx-systems.vercel.app")
 public class UserController {
 
     private final UserService userService;
