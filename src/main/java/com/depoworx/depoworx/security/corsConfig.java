@@ -16,7 +16,7 @@ public class corsConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-            List.of("http://localhost:57071")
+            List.of("http://localhost:57071","http://depo-workx-systems.vercel.app")
         );
 
         configuration.setAllowedMethods(
